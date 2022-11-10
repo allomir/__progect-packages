@@ -1,0 +1,11 @@
+# composer vendor dir
+/vendor
+# windows
+Thumbs.db
+# VS code
+*.code-workspace
+# My work files
+/_faq journal.txt
+/_pub
+#google
+/.tmp.drivedownload
