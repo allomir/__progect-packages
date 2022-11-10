@@ -1,5 +1,5 @@
-# Автор-разработчик: Лебедев Михаил (allomir)
+# Проект Функции-пакеты
+## Характеристики
 * Vendor: [allomir](https://github.com/allomir)
-# Проект: __проект Функции-пакеты
 * Project: [packages](https://github.com/allomir/__progect-packages)
 
