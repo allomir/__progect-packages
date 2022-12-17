@@ -1,0 +1,25 @@
+{
+    "name": "allomir/packages",
+    "description": "Проект старт стандартизированный",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AllomirPackages\\": "src/"
+        },
+        "files": [
+            "src/Functions/FunctionsStd.php",
+            "tests/Functions/FunctionsStdTest.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "allomir",
+            "email": "alomir@yandex.ru"
+        }
+    ],
+    "require": {
+        "funct/funct": "^1.5",
+        "tightenco/collect": "^8.8"
+    }
+}
