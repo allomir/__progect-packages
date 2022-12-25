@@ -1,9 +1,11 @@
 <?php
+
+# Скрипт Тесты
+    #* ССЫЛКА. scriptStd.php
 ## часть 1. NS, подключенные пакеты, модули
+    #* namespace AllomirStart\scriptTestsStd;
 
-namespace Tests\scriptTests;
-
-use Tests\Functions\FunctionsStdTest as functionsStdTest;
+use function AllomirStart\Tests\Functions\FunctionsStdTest\testCapitalize;
 
 ## Чвсть 2. Автозагрузчик composer
 
@@ -15,8 +17,11 @@ if (file_exists($autoload1)) {
 } else {
     require_once($autoload2);
 }
+## Часть 3. Тесты (задачи)
+echo "Результаты:";
 
 ## Чвсть 3.1. тесты FunctionsStdTest.php
+testCapitalize();
 
-functionsStdTest\capitalizeTest('hello', "hello");
-
+## Часть 4. Завершение
+echo PHP_EOL;

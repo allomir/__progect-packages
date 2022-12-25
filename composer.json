@@ -1,11 +1,13 @@
 {
-    "name": "allomir/packages",
+    "name": "allomir/start",
     "description": "Проект старт стандартизированный",
     "type": "project",
     "license": "MIT",
+    "version": "0.0.1-alpha",
     "autoload": {
         "psr-4": {
-            "AllomirPackages\\": "src/"
+            "AllomirStart\\": "src",
+            "AllomirStart\\Tests\\": "tests"
         },
         "files": [
             "src/Functions/FunctionsStd.php",
@@ -20,6 +22,7 @@
     ],
     "require": {
         "funct/funct": "^1.5",
-        "tightenco/collect": "^8.8"
+        "tightenco/collect": "^8.8",
+        "webmozart/assert": "^1.11"
     }
 }

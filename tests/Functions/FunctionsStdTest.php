@@ -1,18 +1,36 @@
 <?php
+
+# Модуль Тесты функции на основе FunctionsStd.php
 ## часть 1. NS, подключенные пакеты, модули
+namespace AllomirStart\Tests\Functions\FunctionsStdTest;
 
-namespace Tests\Functions\FunctionsStdTest;
+use Webmozart\Assert\Assert;
 
-use AllomirPackages\Functions\FunctionsStd as functionsStd;
+use function AllomirStart\Functions\FunctionsStd\capitalize;
 
-# тесты модульные вручную (Без программы) с помощью стандартных функций
-
-function capitalizeTest($qustion, $result) {
-    if (functionsStd\capitalize($qustion) !== $result) {
-        throw new \Exception ("Результат функция неверно");
+## Часть 2. Тесты (модули)
+## Часть 2.1. тесты модульные вручную (Без программы)
+function testCapitalize()
+{
+    ### Утверждение истиности Представление с помощью if
+    if (capitalize('hello') !== 'Hello') {
+        throw new \Exception("Результат функция неверно");
     }
+    if (capitalize('') !== '') {
+        throw new \Exception('Функция работает неверно!');
+    }
+
+    ### Утверждение истиности Представление с помощью assert()
+    assert(capitalize('') === '');
+    assert(capitalize('hello') === 'Hello');
+
+    ### Утверждение истиности Представление с помощью пакет webmozart/assert
+    Assert::eq(capitalize('hello'), 'Hello');
+    Assert::eq(capitalize(''), '');
+
+    ### Завершение теста
+    echo PHP_EOL;
+    echo "testCapitalize: ok";
+
+    return true;
 }
-
-
-
-

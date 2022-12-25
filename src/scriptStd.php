@@ -2,12 +2,12 @@
 
 # Скрипт стандартный
 ## часть 1. NS, подключенные пакеты, модули
-    ### пространство имен script, обычно не требуется
-namespace AllomirPackages\scriptStd;
+    #* namespace AllomirStart\scriptStd;
 
-use Funct\Collection as FC;
+use Funct\Collection as Funct;
 use Tightenco\Collect\Support\Collection;
-use AllomirPackages\Functions\FunctionsStd as FunctionsStd;
+
+use function AllomirStart\Functions\FunctionsStd\capitalize;
 
 ## Чвсть 2. Автозагрузчик composer
 
@@ -20,17 +20,38 @@ if (file_exists($autoload1)) {
     require_once($autoload2);
 }
 
-## Часть 3. Решения
-## Часть 3.1. Funct
-$arr = [11,12,13,14,15];
-echo FC\first($arr);
+## Часть 3. Задачи
+echo "Результаты:";
 
-## Часть 3.2. Collect
+$result = "PHP " . phpversion();
+if (false) {
+    $exc = new Exception('Ошибочка');
+    throw $exc;
+}
+
 echo PHP_EOL;
+print_r($result);
 
-$collection = collect(['taylor', 'abigail', null])->map(function ($name) {
+## Часть 3.1. funct/funct
+$arr = [11,12,13,14,15];
+$result = Funct\first($arr);
+
+echo PHP_EOL;
+print_r($result);
+
+## Часть 3.2. tightenco/collect
+$result = collect(['taylor', 'abigail', null])->map(function ($name) {
     return strtoupper($name);
 })->all();
-print_r($collection);
 
-## Часть 3.3. Решение
+echo PHP_EOL;
+print_r($result);
+
+## Часть 3.3. Задача
+$result = capitalize('hello');
+
+echo PHP_EOL;
+print_r($result);
+
+## Часть 4. Завершение
+echo PHP_EOL;
