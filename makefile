@@ -6,5 +6,6 @@ validate:
 	composer validate
 linter:
 	phpcs --standard=PSR12 bin src tests
-	# composer exec --verbose phpcs -- --standard=PSR12 src bin tests
+phpunit:
+	composer exec --verbose phpunit -- tests
 

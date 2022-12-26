@@ -5,7 +5,9 @@
 ## часть 1. NS, подключенные пакеты, модули
     #* namespace AllomirStart\scriptTestsStd;
 
-use function AllomirStart\Tests\Functions\FunctionsStdTest\testCapitalize;
+use AllomirStart\Tests\Functions\FunctionsStd21Test;
+
+use function AllomirStart\Tests\Functions\FunctionsStd11Test\testCapitalize;
 
 ## Чвсть 2. Автозагрузчик composer
 
@@ -20,8 +22,15 @@ if (file_exists($autoload1)) {
 ## Часть 3. Тесты (задачи)
 echo "Результаты:";
 
-## Чвсть 3.1. тесты FunctionsStdTest.php
+## Чвсть 3.1. тесты FunctionsStd11Test.php
+echo PHP_EOL;
 testCapitalize();
+
+## Чвсть 3.2. тесты FunctionsStd21Test.php
+$modelTestCapitalize = new FunctionsStd21Test();
+
+echo PHP_EOL;
+$modelTestCapitalize->testCapitalize();
 
 ## Часть 4. Завершение
 echo PHP_EOL;

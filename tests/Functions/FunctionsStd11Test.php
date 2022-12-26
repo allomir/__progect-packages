@@ -1,8 +1,8 @@
 <?php
 
-# Модуль Тесты функции на основе FunctionsStd.php
+# Модуль Тесты функции для FunctionsStd.php
 ## часть 1. NS, подключенные пакеты, модули
-namespace AllomirStart\Tests\Functions\FunctionsStdTest;
+namespace AllomirStart\Tests\Functions\FunctionsStd11Test;
 
 use Webmozart\Assert\Assert;
 
@@ -29,8 +29,5 @@ function testCapitalize()
     Assert::eq(capitalize(''), '');
 
     ### Завершение теста
-    echo PHP_EOL;
-    echo "testCapitalize: ok";
-
-    return true;
+    echo "testCapitalize(11): ok";
 }
