@@ -27,10 +27,9 @@ echo PHP_EOL;
 testCapitalize();
 
 ## Чвсть 3.2. тесты FunctionsStd21Test.php
-$modelTestCapitalize = new FunctionsStd21Test();
+$testFunctionsStd21 = new FunctionsStd21Test();
 
 echo PHP_EOL;
-$modelTestCapitalize->testCapitalize();
+$testFunctionsStd21->testCapitalize();
 
-## Часть 4. Завершение
-echo PHP_EOL;
+echo(PHP_EOL . '------------------------------------------' . PHP_EOL);

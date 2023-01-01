@@ -20,26 +20,38 @@ if (file_exists($autoload1)) {
     require_once($autoload2);
 }
 
-## Часть 3. Задачи
+## Часть 3. PHP info
+echo "о программе PHP:";
+
+if (true) {
+    echo PHP_EOL;
+    echo "PHP " . phpversion();
+}
+if (false) {
+    echo PHP_EOL;
+    echo print_r(phpinfo());;
+}
+
+echo(PHP_EOL . '------------------------------------------' . PHP_EOL);
+
+## Часть 4. Задачи
 echo "Результаты:";
 
-$result = "PHP " . phpversion();
+// true - исключение невкл
+// false - исключение вкл (выброс исключения)
 if (false) {
     $exc = new Exception('Ошибочка');
     throw $exc;
 }
 
-echo PHP_EOL;
-print_r($result);
-
-## Часть 3.1. funct/funct
+## Часть 4.1. funct/funct
 $arr = [11,12,13,14,15];
 $result = Funct\first($arr);
 
 echo PHP_EOL;
 print_r($result);
 
-## Часть 3.2. tightenco/collect
+## Часть 4.2. tightenco/collect
 $result = collect(['taylor', 'abigail', null])->map(function ($name) {
     return strtoupper($name);
 })->all();
@@ -47,11 +59,10 @@ $result = collect(['taylor', 'abigail', null])->map(function ($name) {
 echo PHP_EOL;
 print_r($result);
 
-## Часть 3.3. Задача
+## Часть 4.3. Задача
 $result = capitalize('hello');
 
 echo PHP_EOL;
 print_r($result);
 
-## Часть 4. Завершение
-echo PHP_EOL;
+echo(PHP_EOL . '------------------------------------------' . PHP_EOL);

@@ -8,7 +8,7 @@ use Webmozart\Assert\Assert;
 
 use function AllomirStart\Functions\FunctionsStd\capitalize;
 
-## Часть 2. Тесты (модули)
+## Часть 2. Тесты (функции)
 ## Часть 2.1. тесты модульные вручную (Без программы)
 function testCapitalize()
 {

@@ -1,4 +1,4 @@
-# composer vendor dir
+# composer
 /vendor
 # windows
 Thumbs.db
@@ -9,3 +9,6 @@ Thumbs.db
 /_pub
 #google
 /.tmp.drivedownload
+#phpunit
+/coverage
+*.cache
