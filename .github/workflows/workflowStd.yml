@@ -1,5 +1,5 @@
-name: workflow std (makefile)
-
+name: workflowStd
+    # like makefile
 on:
   push:
     branches: [ "main" ]
