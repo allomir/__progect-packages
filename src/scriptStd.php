@@ -29,7 +29,7 @@ if (true) {
 }
 if (false) {
     echo PHP_EOL;
-    echo print_r(phpinfo());;
+    echo print_r(phpinfo());
 }
 
 echo(PHP_EOL . '------------------------------------------' . PHP_EOL);
