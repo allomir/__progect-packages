@@ -45,6 +45,6 @@ Github
 ### Часть 1.2. Директория-проект (локальный)
 
 Действия::
-* $> mkdir __project-allomir-start
-* $> cd __project-allomir-start
-* $> git init - Создать новый репозиторий-git (.git) в директория-проект
+* $> `mkdir __project-allomir-start`
+* $> `cd __project-allomir-start`
+* $> `git init` - Создать новый репозиторий-git (.git) в директория-проект
