@@ -32,7 +32,6 @@ jobs:
     - name: Install dependencies
       run: make install
 
-    # Run Linter
     - name: Run linter
       run: make lint
       

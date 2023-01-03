@@ -1,7 +1,10 @@
-#### Badges
+<!-- _Титульная часть -->
+<!-- ## Обложка -->
+<!-- ### Badges -->
 [![github-actions badge workflowStd.yml](https://github.com/allomir/__project-allomir-start/actions/workflows/workflowStd.yml/badge.svg)](https://github.com/allomir/__project-allomir-start/actions/workflows/workflowStd.yml)
-#### Info
+
+### Характеристики
 * Vendor: [allomir](https://github.com/allomir)
 * Project: [allomir-start](https://github.com/allomir/__progect-allomir-start)
-# Проект
-## Характеристики
+
+# Старт - Проект стандартный
