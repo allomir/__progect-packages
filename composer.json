@@ -3,22 +3,26 @@
     "description": "Проект старт стандартизированный",
     "type": "project",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "AllomirStart\\": "src",
-            "AllomirStart\\Tests\\": "tests"
-        },
-        "files": [
-            "src/Functions/FunctionsStd.php",
-            "tests/Functions/FunctionsStd11Test.php"
-        ]
-    },
     "authors": [
         {
             "name": "allomir",
             "email": "weblebed@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Allomir\\Start\\": "src"
+        },
+        "files": [
+            "src/Functions/Standard.php",
+            "tests/Functions/StandardTest.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Allomir\\Start\\Tests\\": "tests"
+        }
+    },
     "require": {
         "funct/funct": "^1.5",
         "tightenco/collect": "^8.8",
