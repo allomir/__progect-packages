@@ -14,14 +14,16 @@
             "Allomir\\Start\\": "src"
         },
         "files": [
-            "src/Functions/Standard.php",
             "tests/Functions/StandardTest.php"
         ]
     },
     "autoload-dev": {
         "psr-4": {
             "Allomir\\Start\\Tests\\": "tests"
-        }
+        },
+        "files": [
+            "tests/Functions/StandardTest.php"
+        ]
     },
     "require": {
         "funct/funct": "^1.5",
