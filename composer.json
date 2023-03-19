@@ -14,7 +14,7 @@
             "Allomir\\Start\\": "src"
         },
         "files": [
-            "tests/Functions/StandardTest.php"
+            "src/Functions/Standard.php"
         ]
     },
     "autoload-dev": {
