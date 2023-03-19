@@ -34,15 +34,20 @@ echo(PHP_EOL . '------------------start------------------' . PHP_EOL);
 $projInfo = Funstions\getProjectCharacteristics();
 $autoload = Funstions\getComposerFileNameAutoload();
 
+echo "Характеристики проекта, functions/standard:";
+echo PHP_EOL;
+print_r($projInfo);
+echo(PHP_EOL . '------------------------------------------' . PHP_EOL);
+
 ### Часть 1.1. Автозагрузчик composer #Подключение самостоятельным модулем (не загруженным в composer.json)
 // require_once($autoload);
     // Автозагрузчик composer необходимо вызывать до вызова любых функций используемые в автозагрузке (с помощью composer.json)
     // Если вызывается (после функций, и без Автозагрузчика классического) - ошибка повторного подключения getProjectCharacteristics()
 
-echo "Результат, Functions\Standard:";
+echo "Автозагрузчик - подключение:";
 echo PHP_EOL;
-print_r($projInfo);
-print_r(PHP_EOL . '------------------------------------------' . PHP_EOL);
+print_r('');
+echo(PHP_EOL . '------------------------------------------' . PHP_EOL);
 
 ### Часть 2. PHP info
     // true - настройка невкл
@@ -51,16 +56,16 @@ echo "о программа PHP:";
 
 if (true) {
     echo PHP_EOL;
-    echo "PHP " . phpversion();
+    print_r("PHP " . phpversion());
 }
 if (false) {
     echo PHP_EOL;
-    echo print_r(phpinfo());
+    print_r(phpinfo());
 }
 
 echo(PHP_EOL . PHP_EOL . '------------------------------------------' . PHP_EOL);
 
-## 2.1. PHP Исключения
+### Часть 2.1. PHP Исключения
 if (false) {
     $exc = new \Exception('Ошибочка');
     throw $exc;
@@ -68,7 +73,7 @@ if (false) {
     // true - исключение невкл
     // false - исключение вкл (выброс исключения)
 
-## 3.1. Задача funct/funct
+### Часть 3.1. Задача funct/funct
 $arr = [11,12,13,14,15];
 $result = CollectionF\first($arr);
 
@@ -77,7 +82,7 @@ echo PHP_EOL;
 print_r($result);
 echo(PHP_EOL . PHP_EOL . '------------------------------------------' . PHP_EOL);
 
-## 2.2. Задача tightenco/collect
+### Часть 4.1. Задача tightenco/collect
 $result = collect(['taylor', 'abigail', null])->map(function ($name) {
     return strtoupper($name);
 })->all();
@@ -85,6 +90,14 @@ $result = collect(['taylor', 'abigail', null])->map(function ($name) {
 echo "Результат, tightenco/collect:";
 echo PHP_EOL;
 print_r($result);
-print_r(PHP_EOL . '------------------------------------------' . PHP_EOL);
+echo(PHP_EOL . '------------------------------------------' . PHP_EOL);
 
+### Часть 4.1. Задача Functions/FileSystem
+$result = collect(['taylor', 'abigail', null])->map(function ($name) {
+    return strtoupper($name);
+})->all();
 
+echo "Результат, Functions/FileSystem:";
+echo PHP_EOL;
+print_r($result);
+echo(PHP_EOL . '------------------------------------------' . PHP_EOL);
