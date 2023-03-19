@@ -1,5 +1,5 @@
 # composer
-/vendor/
+/vendor
 # windows
 Thumbs.db
 # VS code
@@ -8,7 +8,7 @@ Thumbs.db
 /_faq journal.txt
 /_pub
 #google
-.tmp.drivedownload
+*.drivedownload
 #phpunit
-/coverage/
+/coverage
 *.cache
