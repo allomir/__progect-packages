@@ -1,6 +1,6 @@
 <?php
 
-### Настройка проекта. namespace. namespace скрипты, модули
+### Настройка проекта. namespace. namespace скрипты, модули, список загрузки
 namespace Allomir\Start\Functions\Standard;
 
 ## Список 1. Функции (задачи простые). Данные разные: действия разные

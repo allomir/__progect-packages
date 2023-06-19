@@ -1,9 +1,8 @@
 <?php
 
-### Настройка проекта. namespace. namespace скрипты, модули
+### Настройка проекта. namespace. namespace скрипты, модули, список загрузки
 namespace Allomir\Start;
 
-### Настройка проекта. namespace. настройка Composer autoload. список загрузки
 use Allomir\Start\Functions\Standard;
 
 ### Настройка проекта. namespace. настройка Composer autoload ~ Абсолютный путь с ..
@@ -35,8 +34,6 @@ $result = Standard\getNumberAsWord($arg1);
 echo "Получение число как слово. Результат: $result";
 echo PHP_EOL;
 
-### Часть 2. 
-
-
+### Часть 2.
 ## Список. Функции: Использование (аналог тестирование вручную)
 ### Часть 1. Функции стандартные: Использование
