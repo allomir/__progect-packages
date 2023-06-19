@@ -1,33 +1,45 @@
 <?php
 
-# Модуль Тесты функции для FunctionsStd.php
-## часть 1. NS, подключенные пакеты, модули
-namespace AllomirStart\Tests\Functions\FunctionsStd11Test;
+### Настройка проекта. namespace. namespace скрипты, модули
+namespace Allomir\Start\Tests\Functions\StandardTest;
 
+### Настройка проекта. namespace. настройка Composer autoload. список загрузки
+use function Allomir\Start\Functions\Standard\getNumberAsWord;
 use Webmozart\Assert\Assert;
 
-use function AllomirStart\Functions\FunctionsStd\capitalize;
+## Список 1. Тесты-функции. Functions\Standard
 
-## Часть 2. Тесты (функции)
-## Часть 2.1. тесты модульные вручную (Без программы)
-function testCapitalize()
-{
-    ### Утверждение истиности Представление с помощью if
-    if (capitalize('hello') !== 'Hello') {
+function testGetNumberAsWordVar1() {
+    # Список Утверждения истиности if Exception
+    if (getNumberAsWord(3) !== 'three') {
         throw new \Exception("Результат функция неверно");
     }
-    if (capitalize('') !== '') {
+    if (getNumberAsWord(99) !== '') {
         throw new \Exception('Функция работает неверно!');
     }
 
-    ### Утверждение истиности Представление с помощью assert()
-    assert(capitalize('') === '');
-    assert(capitalize('hello') === 'Hello');
+    # Результат теста
+    echo "test1 getNumberAsWord: ok";
+    echo PHP_EOL;
+}
 
-    ### Утверждение истиности Представление с помощью пакет webmozart/assert
-    Assert::eq(capitalize('hello'), 'Hello');
-    Assert::eq(capitalize(''), '');
+function testGetNumberAsWordVar2() {
+    # Список Утверждения истиности assert()
+    assert(getNumberAsWord(3) === 'three');
+    assert(getNumberAsWord(99) === '');
 
-    ### Завершение теста
-    echo "testCapitalize(11): ok";
+    # Результат теста
+    echo "test2 getNumberAsWord: ok";
+    echo PHP_EOL;
+
+}
+
+function testGetNumberAsWordVar3() {
+    # Список Утверждения истиности webmozart/assert
+    Assert::eq(getNumberAsWord(3), 'three');
+    Assert::eq(getNumberAsWord(99), '');
+
+    # Результат теста
+    echo "test3 getNumberAsWord: ok";
+    echo PHP_EOL;
 }

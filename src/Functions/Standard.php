@@ -1,64 +1,40 @@
 <?php
 
-# модуль стандартный функции
-## NS, подключенные пакеты, модули
+### Настройка проекта. namespace. namespace скрипты, модули
 namespace Allomir\Start\Functions\Standard;
 
-## Часть 2.1. Задача
-    // автоопределение проект-характеристики по ключевым директориям /src /vendor считая от начала
-    // проект-директория (корневая директория) название
-    // проект-директория (корневая директория) путь
-    // не использует автозагрузку composer, подключать require_once()
-    // используются только встроенные функции
+## Список 1. Функции (задачи простые). Данные разные: действия разные
 
-function getProjectCharacteristics(): array
+function getListNumbersAsWords(): array
 {
-    $projectCharacteristics = [
-        'dirPath' => getProjectDirPath(),
-        'dirName' => getProjectDirName(),
-        'composerFileNameAutoload' => getComposerFileNameAutoload(),
+    # Данные: список (индексированный массив)
+    # Алгоритм (действия): хранение
+    # результат: список (индексированный массив)
+
+    $arr = [
+        1 => "one",
+        2 => "two",
+        3 => "three",
+        4 => "four",
+        5 => "five",
+        6 => "six",
+        7 => "seven",
+        8 => "eight",
+        9 => "nine",
+        0 => "zero",
     ];
 
-    return $projectCharacteristics;
+    return $arr;
 }
 
-function getProjectDirPath(): ?string
+function getNumberAsWord(int $num): string
 {
-    // Как модуль-функции
-    // Определяется по файнловой структуре проекта - файлы и директории внутри проект-директории
-    // /src - метка-директория в пути FunctionsStd. Cчитая от начала строки. Не рекомендуется использовать вне проектов
-    // _project, __project, project - дополнительная проверка, все проекты должны начинатся с _project, __project, project
-    // /vendor не всегда присутсвует в проекте, особенно в начале разработки
+    # Данные: массивы
+    # Алгоритм (действия): получение, фильтрация
+    # результат: строка, название числа
 
-    // Как зависимость
-    // Определяется по файнловой структуре проекта - файлы и директории внутри проект-директории
-    // /vendor - метка-директория в пути FunctionsStd. Cчитая от начала строки. Не рекомендуется использовать вне проектов
+    $arr = getListNumbersAsWords();
+    $result = $arr[$num] ?? '';
 
-    $path = __DIR__;
-    $idSRC = strpos($path, '/src/');
-    $projectDirPath = substr($path, 0, $idSRC);
-    
-    return $projectDirPath;
-}
-
-function getProjectDirName(): ?string
-{
-    return pathinfo(getProjectDirPath())['basename'];
-}
-
-function getComposerFileNameAutoload(): ?string
-{
-    return getProjectDirPath() . '/vendor/autoload.php';
-}
-
-function intoPathAbs($filePath)
-{
-    if (strpos($filePath, "./") === 0) {
-        $filePath = substr($filePath, 2);
-    }
-    if (strpos($filePath, "/") !== 0) {
-        $filePath = __DIR__ . "/" . $filePath;
-    }
-
-    return $filePath;
+    return $result;
 }

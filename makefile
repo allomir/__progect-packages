@@ -1,6 +1,4 @@
-install:
-	composer install
-
+# project
 script-std:
 	php src/scriptStd.php
 
@@ -10,15 +8,24 @@ bin-std:
 validate:
 	composer validate
 
+# packajes
+install:
+	composer install
+
+# packajes. Тесты
 lint:
-	composer exec --verbose phpcs -- --standard=PSR12 src bin tests
+	composer --verbose exec phpcs -- --standard=PSR12 src bin tests
+
+tests-standard:
+	php tests/tests.php
 
 phpunit:
-	composer exec --verbose phpunit -- tests
+	composer --verbose exec phpunit -- tests
 
 phpunit-coverage:
-	composer exec --verbose phpunit -- tests --coverage-text
+	composer --verbose exec phpunit -- tests --coverage-text
 
 phpunit-coverage-html:
-	composer exec phpunit -- tests --coverage-html coverage
+	composer --verbose exec phpunit -- tests --coverage-html coverage
+
 

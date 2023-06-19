@@ -1,10 +1,10 @@
 <?php
 
 ### Настройка проекта. namespace. namespace скрипты, модули
-namespace Allomir\Start;
+namespace Allomir\Start\Tests;
 
 ### Настройка проекта. namespace. настройка Composer autoload. список загрузки
-use Allomir\Start\Functions\Standard;
+use Allomir\Start\Tests\Functions\StandardTest;
 
 ### Настройка проекта. namespace. настройка Composer autoload ~ Абсолютный путь с ..
 $status_result = null;
@@ -25,18 +25,8 @@ if ($status_result) {
 }
 echo PHP_EOL;
 
-
-## Задача сложные (несколько функций). Структура задачи
-### Часть 1. Данные: разные. Действия: получение
-
-$arg1 = 3;
-$result = Standard\getNumberAsWord($arg1);
-
-echo "Получение число как слово. Результат: $result";
-echo PHP_EOL;
-
-### Часть 2. 
-
-
-## Список. Функции: Использование (аналог тестирование вручную)
-### Часть 1. Функции стандартные: Использование
+### Часть 1. Тестирование Standard
+echo "Результаты:" . PHP_EOL;
+StandardTest\testGetNumberAsWordVar1();
+StandardTest\testGetNumberAsWordVar2();
+StandardTest\testGetNumberAsWordVar3();
