@@ -1,8 +1,9 @@
 <?php
 
-### Настройка проекта. namespace. namespace скрипты, модули, список загрузки
+### Настройка проекта. namespace. namespace скрипты, модули
 namespace Allomir\Start;
 
+### Настройка проекта. namespace. настройка Composer autoload. список загрузки
 use Allomir\Start\Functions\Standard;
 
 ### Настройка проекта. namespace. настройка Composer autoload ~ Абсолютный путь с ..

@@ -27,5 +27,3 @@ phpunit-coverage:
 
 phpunit-coverage-html:
 	composer --verbose exec phpunit -- tests --coverage-html coverage
-
-

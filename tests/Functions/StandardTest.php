@@ -1,14 +1,15 @@
 <?php
 
-### Настройка проекта. namespace. namespace скрипты, модули, список загрузки
+### Настройка проекта. namespace. namespace скрипты, модули
 namespace Allomir\Start\Tests\Functions\StandardTest;
 
+### Настройка проекта. namespace. настройка Composer autoload. список загрузки
 use Webmozart\Assert\Assert;
 
 use function Allomir\Start\Functions\Standard\getNumberAsWord;
 
 ## Список 1. Тесты-функции. Functions\Standard
-function testGetNumberAsWordVar1()
+function testGetNumberAsWordVar1(): void
 {
     # Список Утверждения истиности if Exception
     if (getNumberAsWord(3) !== 'three') {
@@ -23,7 +24,7 @@ function testGetNumberAsWordVar1()
     echo PHP_EOL;
 }
 
-function testGetNumberAsWordVar2()
+function testGetNumberAsWordVar2(): void
 {
     # Список Утверждения истиности assert()
     assert(getNumberAsWord(3) === 'three');
@@ -34,7 +35,7 @@ function testGetNumberAsWordVar2()
     echo PHP_EOL;
 }
 
-function testGetNumberAsWordVar3()
+function testGetNumberAsWordVar3(): void
 {
     # Список Утверждения истиности webmozart/assert
     Assert::eq(getNumberAsWord(3), 'three');
