@@ -10,7 +10,7 @@ _Титульная часть
 -->
 
 ### Значки
-[![badge github-actions make.yml](https://github.com/allomir/__project-allomir-start/actions/workflows/make.yml/badge.svg)](https://github.com/allomir/__project-allomir-start/actions/workflows/make.yml)
+[![badge github-actions action-make.yml](https://github.com/allomir/__project-allomir-start/actions/workflows/action-make.yml/badge.svg)](https://github.com/allomir/__project-allomir-start/actions/workflows/action-make.yml)
 
 ## Старт - Проект стандартный php
 ### Характеристики
@@ -31,4 +31,3 @@ _Титульная часть
 
 <!-- _Текстовая часть -->
 
-,,536154589

@@ -1,5 +1,4 @@
-name: workflowStd
-    # like makefile
+name: action-make
 on:
   push:
     branches: [ "main" ]
