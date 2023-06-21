@@ -9,7 +9,7 @@ _Титульная часть
         Характеристика проекта. Сервисы
 -->
 
-### Значки
+<!-- ### Значки -->
 [![badge github-actions action-make.yml](https://github.com/allomir/__project-allomir-start/actions/workflows/action-make.yml/badge.svg)](https://github.com/allomir/__project-allomir-start/actions/workflows/action-make.yml)
 
 ## Старт - Проект стандартный php
