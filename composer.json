@@ -22,7 +22,7 @@
             "Allomir\\Start\\Tests\\": "tests"
         },
         "files": [
-            "tests/Functions/StandardTest.php"
+            "tests/Functions/StandardAsserts.php"
         ]
     },
     "require": {
