@@ -1,9 +1,9 @@
 # project
-script-std:
-	php src/scriptStd.php
+script-php:
+	php src/script.php
 
-bin-std:
-	./bin/binStd
+script-cli:
+	./bin/script
 
 validate:
 	composer validate
