@@ -1,15 +1,18 @@
 <!--
 _Титульная часть
-    Badges сервисы (линтеры)
+    Badges сервисы
+        сервис github-actions
     Характеристики проекта
-        Badges Характеристика проекта. Название и ссылка
+        Характеристика проекта. Название
+            как ссылка
         Характеристика проекта. Автор-вендор
+            как ссылка
         Характеристика проекта. version
         Характеристика проекта. Programs
         Характеристика проекта. Сервисы
 -->
 
-<!-- ### Значки -->
+<!-- ### Badges сервисы -->
 [![badge github-actions action-make.yml](https://github.com/allomir/__project-allomir-start/actions/workflows/action-make.yml/badge.svg)](https://github.com/allomir/__project-allomir-start/actions/workflows/action-make.yml)
 
 ## Старт - Проект стандартный php
