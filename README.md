@@ -13,8 +13,7 @@ _Титульная часть
 -->
 
 <!-- ### Badges сервисы -->
-[![badge github-actions action-make.yml](https://github.com/allomir/__project-allomir-start/actions/workflows/action-make.yml/badge.svg)](https://github.com/allomir/__project-allomir-start/actions/workflows/action-make.yml)
-
+[![action-make](https://github.com/allomir/__project-allomir-start/actions/workflows/action-make.yml/badge.svg)](https://github.com/allomir/__project-allomir-start/actions/workflows/action-make.yml)
 ## Старт - Проект стандартный php
 ### Характеристики
 - Vendor: [allomir](https://github.com/allomir)
@@ -29,7 +28,7 @@ _Титульная часть
     - make
 - Сервисы::
     - github
-    - Github actions
+    - Github-actions
     - Codeclimate
 
 <!-- _Текстовая часть -->
