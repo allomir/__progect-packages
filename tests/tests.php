@@ -4,7 +4,8 @@
 namespace Allomir\Start\Tests;
 
 ### Настройка проекта. namespace. настройка Composer autoload. список загрузки
-use Allomir\Start\Tests\Functions\StandardTest;
+use Allomir\Start\Tests\Functions\StandardByPHPTest;
+use Allomir\Start\Tests\Functions\StandardByWebmozartTest;
 
 ### Настройка проекта. namespace. настройка Composer autoload ~ Абсолютный путь с ..
 $status_result = null;
@@ -27,6 +28,6 @@ echo PHP_EOL;
 
 ### Часть 1. Тестирование Standard
 echo "Результаты:" . PHP_EOL;
-StandardTest\testGetNumberAsWordVar1();
-StandardTest\testGetNumberAsWordVar2();
-StandardTest\testGetNumberAsWordVar3();
+StandardByPHPTest\testGetNumberAsWordVar1();
+StandardByPHPTest\testGetNumberAsWordVar2();
+StandardByWebmozartTest\testGetNumberAsWord();

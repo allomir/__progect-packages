@@ -16,7 +16,7 @@ install:
 lint:
 	composer --verbose exec phpcs -- --standard=PSR12 src bin tests
 
-tests-standard:
+testing:
 	php tests/tests.php
 
 phpunit:

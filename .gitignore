@@ -5,8 +5,13 @@ Thumbs.db
 # VS code
 *.code-workspace
 # My work files
-/**/!!*
-/**/_*
+/src/**/!!*
+/src/**/_*
+/bin/**/!!*
+/bin/**/_*
+/tests/**/!!*
+/tests/**/_*
+/_*
 /!faq-journal.txt
 /!buffer
 #google
